@@ -1,0 +1,50 @@
+#include <iostream>
+#include <string>
+#include <vector>
+#include <bits/stdc++.h>
+#include <cmath>
+
+
+using namespace std;
+class solution
+{
+	public:
+	string solve(long long int angle, long long int n)
+	{
+		long long int ans = 0;
+		if(n>25)
+			return "YES";
+		else
+		{
+			for(int i = 1 ; i < n; i++)
+		{
+			ans+=angle;
+			if(ans%90==0)
+			{
+				return "YES";
+			}
+				
+		}
+		return "NO";
+		}
+		
+	}
+};
+int main() {
+	//ios_base::sync_with_stdio(false);
+	cin.tie(nullptr);
+	cout.tie(nullptr);
+	long long int t;
+	cin>>t;
+	solution ss;
+	while(t--)
+	{
+		long long int n;
+		cin>>n;
+		int angle = (((n-2)*180)/n);
+		
+		string s = ss.solve(angle,n);
+		cout<<s<<endl;
+	}
+	return 0;
+}
