@@ -11,7 +11,5 @@ Important short points to remember/what I come across
    
 * Handshaking Lemma : <br>
     *  `Sum of Degrees of vertex = 2 * |Number of Edges| `
-    * Number of vertexes with odd egrees will always be even
-    * for ex: assert(<return value from the function>==<actual answer>)
-    *  If the answer is wrong, it gives an `AssertationError` on terminal - and the program terminates.
+    * Number of vertexes with odd egrees will always be even.
 </details>
